@@ -1,0 +1,36 @@
+#nav {
+    background-color: #99bab6;
+    width: 40%;
+    display: flex;
+    margin: auto;
+  }
+  body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient( to bottom right, #0e8c80, #031f1c );
+    background-repeat: none;
+    font-family: 'Dosis', sans-serif;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+  }
+#Rheader{
+    width: 30%;
+    color: whitesmoke;
+    display: flex;
+   
+}
+#resumeT{
+    font-size: xx-large;
+}
+
+#imgR{
+ justify-content: right;
+ height: 40%;
+ width: 30%;
+ margin-left: 50%;
+}
+#ul{
+  display: none;
+}

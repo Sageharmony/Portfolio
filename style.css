@@ -1,0 +1,135 @@
+body {
+  background-image: url("imgs/backg.png");
+  font-family: 'Dosis', sans-serif;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#nav {
+  background-color: rgb(252, 246, 237);
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+#modal-text {
+  text-align: center;
+  background-color: rgb(154, 130, 0, .2);
+}
+
+#modal-links {
+  display: block;
+  text-decoration: none;
+}
+
+#close {
+  margin-left: 10em;
+  margin-top: 1em;
+}
+
+#header {
+  display: flex;
+  background-color: rgb(252, 246, 237);
+  justify-content: space-around;
+  width: 90%;
+  margin: 1em 2em 1em 2em;
+  box-shadow: 3px 3px 3px rgb(147, 89, 0, 0.653)
+}
+
+#header-img {
+  margin-top: 0.5em;
+  justify-self: flex-end;
+
+}
+
+#words {
+  margin-top: 2em;
+  height: 5em;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  color: #726100;
+  font-family: 'Limelight', cursive;
+  margin-right: .5em;
+}
+
+#links {
+  display: flex;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+}
+
+#portfolio {
+  margin: 1em 2em 1em 2em;
+  background-color: rgb(206, 125, 0);
+  width: 90%;
+  text-align: right;
+  height: 15em;
+  display: flex;
+  box-shadow: 3px 3px 3px rgb(253, 246, 236, 0.653);
+
+
+}
+
+#resume {
+  margin: 1em 2em 1em 2em;
+  background-color: rgb(147, 89, 0);
+  width: 90%;
+  text-align: right;
+  height: 15em;
+  display: flex;
+  box-shadow: 3px 3px 3px rgb(253, 246, 236, 0.653)
+}
+
+#bio {
+  margin: 1em 2em 1em 2em;
+  background-color: #9a8200;
+  width: 90%;
+  text-align: right;
+  height: 15em;
+  display: flex;
+  box-shadow: 3px 3px 3px rgb(253, 246, 236, 0.653)
+}
+
+#text {
+  display: flex;
+  text-decoration: none;
+  background-color: rgb(245, 245, 219, .2);
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Limelight', cursive;
+  color: black;
+}
+
+#modal {
+  background-color: #f7c93f;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  width: 40%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+/* #modal-text {
+	background-color: white;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	line-height: 120%;
+	font: arial;
+
+} */
