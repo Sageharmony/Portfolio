@@ -2,12 +2,10 @@
 $( () => {
 
         $('#icon').on('click', () => {
-            $('#modal').css('display', 'block')
+            $('#modal').slideDown('slow', () => {
+                $('#modal').css('display', 'block')
+            })
         })
-
-            // = () => {
-            //     $('#modal').css('display', 'none')
-            // }
 
         $('#close').on('click', () => {
             $('#modal').css('display', 'none')
@@ -16,10 +14,29 @@ $( () => {
         $('#skills').click(() => {
             $('#ul').css('display', 'block')
         })
+        
+        const newName = () =>{
+            $('#nav-word').fadeOut(
+                () => {
+                    $('#nav-word').text("SAGE KOLPIN").fadeIn()
+                }
+            )
+        }
+
+        $(window).scrollTop($('#nav').addClass("sticky")
+        ) 
+        $(window).scroll(()=> {
+            $('#nav-word').html($(this).scrollTop() > 250 ? 'Sage Kolpin':'Hello.');
+          })
+
+          // I learned the above trick from stack overflow and how to change words
+
+
+    
 
 
 
-        // -------------- RESUME PAGE ---------------- //
+        // -------------- Portfolio PAGE ---------------- //
         console.log($)
         //--- carosel ---- // 
         let currentImgIndex = 0
@@ -45,6 +62,15 @@ $( () => {
             $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
         
         })
+
+
+        $('.carousel-images').on('click', () => {
+         $('#about').fadeIn('slow')
+         $('#about').delay(3000).fadeOut('slow')
+        })
+
+
+
 
 
 

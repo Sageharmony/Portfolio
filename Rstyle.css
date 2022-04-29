@@ -1,9 +1,13 @@
 #nav {
-    background-color: #99bab6;
-    width: 40%;
-    display: flex;
-    margin: auto;
-  }
+  background-color: rgb(226, 209, 169);
+  display: flex;
+  margin: auto;
+  border: 3px solid #2c2502;
+  height: 4em;
+  top: 0;
+  overflow: hidden;
+  justify-content: space-around;
+}
   body {
     height: 100%;
     background-repeat: no-repeat;
