@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Projects</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Pstyle.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+<head>
+    <title>Projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Pstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,49 +15,158 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>All of my Projects</h1>
-        <div class="container">
+</head>
+
+<body>
+    <div id="nav">
+        <a href="home.html" id="text">homepage</a>
+    
+         <div id="portfolio">
+             <a href="projects.html" id="text">portfolio</a>
+         </div>
+         <div id="resume">
+             <a href="resume.html" id="text">resume</a>
+         </div>
+         <div id="bio">
+             <a href="bio.html" id="text">about</a>
+         </div>
+         <div id="modal">
+            <div id="modal-text">
+                <h2>You can find me on  -</h2>
+                </div>
+                <div id="modal-link1">
+                    <a href="https://www.linkedin.com/in/sage-kolpin-14713a143/" target="blank">LinkedIn</a></div>
+
+                   <div id="modal-link2"><a href="https://github.com/Sageharmony" target="blank">Github</a></div>
+
+            <button type="button" id="close">exit</button>
+        </div>
+     
+        <h2 id="filler">contact me:</h2>
+        <div id="icon">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="width: 50px; height: 50px;">
+                <style>
+                    .line-message3-line1 {
+                        animation: line-message3-line 3s 600ms infinite;
+                        stroke-dasharray: 150;
+                        stroke-dashoffset: 160;
+                    }
+
+                    .line-message3-line2 {
+                        animation: line-message3-line 3s 300ms infinite;
+                        stroke-dasharray: 150;
+                        stroke-dashoffset: 160;
+                    }
+
+                    .line-message3-line3 {
+                        animation: line-message3-line 3s infinite;
+                        stroke-dasharray: 150;
+                        stroke-dashoffset: 160;
+                    }
+
+                    @keyframes line-message3-line {
+                        0% {
+                            stroke-dashoffset: 160;
+                        }
+
+                        20% {
+                            stroke-dashoffset: 160;
+                        }
+
+                        50% {
+                            stroke-dashoffset: 0;
+                            opacity: 1;
+                        }
+
+                        80% {
+                            stroke-dashoffset: 0;
+                            opacity: 0;
+                        }
+
+                        100% {
+                            stroke-dashoffset: 150;
+                            opacity: 0;
+                        }
+                    }
+
+                    @media (prefers-reduced-motion: reduce) {
+
+                        .line-message3-line1,
+                        .line-message3-line2,
+                        .line-message3-line3 {
+                            animation: none;
+                        }
+                    }
+                </style>
+                <path class="stroke1 fill1"
+                    d="M84.5 13H15C10.5817 13 7 16.5817 7 21V59.5C7 63.9183 10.5817 67.5 15 67.5H18V85.0858C18 85.9767 19.0771 86.4229 19.7071 85.7929L37.7071 67.7929C37.8946 67.6054 38.149 67.5 38.4142 67.5H84.5C88.9183 67.5 92.5 63.9183 92.5 59.5V21C92.5 16.5817 88.9183 13 84.5 13Z"
+                    fill="rgba(226,209,154,0.22)" stroke="#6B6361" stroke-width="4.0px"
+                    style="animation-duration: 4.1s;"></path>
+                <path class="line-message3-line1 stroke2" d="M21 53H49" stroke="#6B6361" stroke-width="4.0px"
+                    style="animation-duration: 4.1s;"></path>
+                <path class="line-message3-line2 stroke2" d="M21 41H77" stroke="#6B6361" stroke-width="4.0px"
+                    style="animation-duration: 4.1s;"></path>
+                <path class="line-message3-line3 stroke2" d="M21 29H77" stroke="#6B6361" stroke-width="4.0px"
+                    style="animation-duration: 4.1s;"></path>
+                    <script src="./oneko.js"></script>
+            </svg>
+        </div>
+    </div>    
+        <header id="header">
+            <div id="Hwords1">
+            <h1>All of my Projects</h1>
+            </div>
+            <div id="Hwords2">
+            <h3>Click on the image for more information about each project</h3>
+        </div>
+        </header>
+    <div class="container">
         <div class="carousel-container">
             <!-- previous button -->
             <div class="carousel-button previous">
                 <!-- from linearicons icon font -->
-                <span class="lnr lnr-chevron-left"></span>
+                <span class="lnr lnr-chevron-left"> &#8676;</span>
             </div>
             <!-- images -->
             <div class="carousel-images">
-    
-                <img
-                src="imgs/womanLarge.png"
-                alt="Project one"
-            />
-                <img
-                    src="https://wallpapers.com/images/high/programmer-motivational-quote-z9qd56adv9n47m0y.jpg"
-                    alt="Project two"
-                />
-                <img src="https://resi.ze-robot.com/dl/mi/minimal-dark-coding-wallpaper-2560%C3%971080.jpg" alt="project three"
-                 />
-                 <img
-                 src="https://wallpapercave.com/wp/wp8778501.jpg"
-                 alt="project four"
-             />
+                <img src="https://wallpapers.com/images/high/programmer-motivational-quote-z9qd56adv9n47m0y.jpg"
+                    alt="Project two" />
+                <img src="https://resi.ze-robot.com/dl/mi/minimal-dark-coding-wallpaper-2560%C3%971080.jpg"
+                    alt="project three" />
+                <img src="https://wallpapercave.com/wp/wp8778501.jpg" alt="project four" />
             </div>
             <!-- next button -->
             <div class="carousel-button next">
-                <!-- from linearicons icon font --> 
-                <span class="lnr lnr-chevron-right"></span>
+                <span class="lnr lnr-chevron-right">&#8677;</span>
             </div>
         </div>
     </div>
-    <div id="about">
+        <div class="moreInfo">
         <div id="project1">
-        <h1>Here's a project</h1>
-        <p>Here is more on that</p>
-       </div>
-       <div id="project2"
-       <h1>Decons</h1>
-       <p>odo</p>
+            <h1>here's a project</h1>
+            <p>here is more on that</p>
+        </div>
+        <div id="project2">
+        <h1>wow another project</h1>
+            <p>with so much work put into it</p>
+        </div>
+        <div id="project3">
+            <h1>projects on projects</h1>
+            <p>on projects on projecs</p>
+        </div>
     </div>
-    </body>
+
+    <div id="learn">
+        <h4>Every Project Teaches Me Something <br> Here is what I've Learned so Far..</h4>
+        <ul id="hide">
+            <li>When to take a break (as i type this at 11:35pm..)</li>
+            <li>A better understanding of flexbox</li> 
+            <li>The thrill of being caught on a bug....</li>
+            <li>And more importantly figuring out how to fix that bug</li>
+            <li>Solidifying what I like within the world of development</li>
+        </ul>
+    </div>
+</body>
+
 </html>

@@ -1,78 +1,83 @@
+$(() => {
+  $("#icon").on("click", () => {
+    $("#modal").slideDown("slow", () => {
+      $("#modal").css("display", "block");
+    });
+  });
 
-$( () => {
+  $("#close").on("click", () => {
+    $("#modal").css("display", "none");
+  });
 
-        $('#icon').on('click', () => {
-            $('#modal').slideDown('slow', () => {
-                $('#modal').css('display', 'block')
-            })
-        })
+  // --------- Resume Page ------------ // 
 
-        $('#close').on('click', () => {
-            $('#modal').css('display', 'none')
-        })
+  $("#tech-skills").click(() => {
+    $("#tech").css("display", "block");
+  });
+  $("#other-skills").click(() => {
+    $("#other").css("display", "block");
+  });
 
-        $('#skills').click(() => {
-            $('#ul').css('display', 'block')
-        })
-        
-        const newName = () =>{
-            $('#nav-word').fadeOut(
-                () => {
-                    $('#nav-word').text("SAGE KOLPIN").fadeIn()
-                }
-            )
-        }
-
-        $(window).scrollTop($('#nav').addClass("sticky")
-        ) 
-        $(window).scroll(()=> {
-            $('#nav-word').html($(this).scrollTop() > 250 ? 'Sage Kolpin':'Hello.');
-          })
-
-          // I learned the above trick from stack overflow and how to change words
-
-
-    
+  $(window).scrollTop($("#nav").addClass("sticky"));
+  $(window).scroll(() => {
+    $("#nav-word").html($(this).scrollTop() > 250 ? "Sage Kolpin" : "welcome");
+  });
 
 
 
-        // -------------- Portfolio PAGE ---------------- //
-        console.log($)
-        //--- carosel ---- // 
-        let currentImgIndex = 0
-        let numOfImages = $('.carousel-images').children().length - 1
-        $('.next').on('click', () => {
-            $('.carousel-images').children().eq(currentImgIndex).css('display', 'none')
-            if(currentImgIndex < numOfImages) {
-                currentImgIndex ++
-               } else {
-                currentImgIndex = 0
-               }
-            $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
-        })
+  // -------------- Portfolio PAGE ---------------- //
+  console.log($);
+  //--- carosel ---- //
+  let currentImgIndex = 0;
+  let numOfImages = $(".carousel-images").children().length - 1;
+  $(".next").on("click", () => {
+    $(".carousel-images").children().eq(currentImgIndex).css("display", "none");
+    if (currentImgIndex < numOfImages) {
+      currentImgIndex++;
+    } else {
+      currentImgIndex = 0;
+    }
+    $(".carousel-images")
+      .children()
+      .eq(currentImgIndex)
+      .css("display", "block");
+  });
 
-        $('.previous').on('click', () =>{
-            $('.carousel-images').children().eq(currentImgIndex).css('display', 'none')
-            if(currentImgIndex > 0){
-                currentImgIndex -- 
-            } else {
-                currentImgIndex == numOfImages
-            }
+  $(".previous").on("click", () => {
+    $(".carousel-images").children().eq(currentImgIndex).css("display", "none");
+    if (currentImgIndex > 0) {
+      currentImgIndex--;
+    } else {
+      currentImgIndex == numOfImages;
+    }
 
-            $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
-        
-        })
+    $(".carousel-images")
+      .children()
+      .eq(currentImgIndex)
+      .css("display", "block");
+  });
+
+  $(".carousel-images").on("click", () => {
+    if(currentImgIndex == 0){
+        $('#project2').hide()
+        $('#project3').hide()
+    $("#project1").fadeIn("slow"); 
+    }
+    if(currentImgIndex == 1){
+        $('#project1').hide()
+        $('#project3').hide()
+        $('#project2').fadeIn("slow");
+    }
+    if(currentImgIndex == 2){
+        $('#project1').hide()
+        $('#project2').hide()
+        $('#project3').fadeIn("slow");
+    }
+  });
 
 
-        $('.carousel-images').on('click', () => {
-         $('#about').fadeIn('slow')
-         $('#about').delay(3000).fadeOut('slow')
-        })
 
 
 
 
-
-
-
-    }) 
+});
