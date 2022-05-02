@@ -70,20 +70,34 @@ body {
   z-index: 1;
   display: none;
 }
+
 #modal-text {
-align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20em;
   height: 3em;
-  background-color: #B4E5E7;
-  
+  background-color: #C5E1E8;
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;  
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 #modal-link1 {
   display: flex;
   justify-content: center;
   align-items: space-between;
+  color: whitesmoke;
   text-decoration: none;
   font-size: large;
+  background-color: rgb(187, 187, 89);
+  border: 3px solid black;
+  width: 20%;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 #modal-link2 {
@@ -92,19 +106,30 @@ align-content: center;
   align-items: space-between;
   text-decoration: none;
   font-size: large;
+  background-color: rgb(231, 182, 104);
+  border: 3px solid black;
+  width: 20%;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+
 }
 
 
+
 #close {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
+
+  margin-top: 4em;
   padding: 1em;
   width: 155px;
   font-family: 'Courier New', Courier, monospace;
   font-size: medium;
   background-color: #ee8583;
   color: whitesmoke;
+  border: 3px solid black;
+  font-family: 'Limelight', cursive;
+  margin-left: 28em;
 }
 
 /* // ---------------- Head Box -------------- // */
@@ -252,10 +277,44 @@ background-repeat: no-repeat;
 
 
 
-
-
-
-
+@media screen and (max-width: 1000px) {
+  #home-imgs{
+    display: none;
+  }
+  #quote{
+    display: none;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  #short-about{
+    margin-bottom: 2em;
+    width: 20em;
+  }
+  #more-info{
+    margin-top: 3em;
+    width: 20em;
+    margin-left: 1em;
+  }
+  #box-3{
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: -1em;
+    width: 20em
+  }
+  #footer{
+    display: block;
+  }
+  #nav-word{
+    display: none;
+  }
+  #nav{
+    font-size: 1eml;
+  }
+}
 
 @media screen and (max-width: 800px) {
   #words{
@@ -274,4 +333,12 @@ background-repeat: no-repeat;
   #imgs{
     display: none;
   }
+}
+
+@media screen and (min-width: 1200px) {
+
+  #boxs{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }

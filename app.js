@@ -12,10 +12,10 @@ $(() => {
   // --------- Resume Page ------------ // 
 
   $("#tech-skills").click(() => {
-    $("#tech").css("display", "block");
+    $("#tech").fadeIn(1000)
   });
   $("#other-skills").click(() => {
-    $("#other").css("display", "block");
+    $("#other").fadeIn(1000)
   });
 
   $(window).scrollTop($("#nav").addClass("sticky"));

@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -92,7 +93,7 @@ h1 {
   margin-right: 12em;
   height: 3em;
   width: 8em;
-  background-color:  #88B393;
+  background-color: #88B393;
   animation-name: movein;
   animation-duration: 3s;
   border: 3px solid #243A37;
@@ -133,7 +134,7 @@ h1 {
 
 @keyframes text3 {
   from {
-    margin-right: 90em;
+    margin-left: -100em;
   }
 
   to {
@@ -159,7 +160,7 @@ h1 {
 
 @keyframes text4 {
   from {
-    margin-right: 90em;
+    margin-left: -150em;
   }
 
   to {
@@ -203,12 +204,12 @@ h1 {
   height: 10em;
   width: 40em;
   margin-top: 2em;
-  background-color:  #ACC7A5;
+  background-color: #ACC7A5;
   animation-name: text1;
   animation-duration: 3s;
   border: 3px solid #243A37;
   text-align: center;
- 
+
 }
 
 #textBox5 {
@@ -227,7 +228,8 @@ h1 {
   text-align: center;
 
 }
-.list{
+
+.list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,6 +242,7 @@ h1 {
   align-self: center;
   margin-bottom: 2em;
 }
+
 /* // ------------ MODAL --------- //  */
 #modal {
   background-color: #bf9004cd;
@@ -248,43 +251,69 @@ h1 {
   top: 100%;
   transform: translate(-50%, -50%);
   height: 100%;
-  width:100%;
+  width: 100%;
   z-index: 1;
   display: none;
 }
+
 #modal-text {
-align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20em;
   height: 3em;
-  background-color: #B4E5E7;
-  
+  background-color: #C5E1E8;
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 #modal-link1 {
   display: flex;
   justify-content: center;
   align-items: space-between;
+  color: whitesmoke;
   text-decoration: none;
   font-size: large;
+  background-color: rgb(187, 187, 89);
+  border: 3px solid black;
+  width: 20%;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 #modal-link2 {
   display: flex;
   justify-content: center;
   align-items: space-between;
   text-decoration: none;
   font-size: large;
+  background-color: rgb(231, 182, 104);
+  border: 3px solid black;
+  width: 20%;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+
 }
 
 
+
 #close {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
+
+  margin-top: 4em;
   padding: 1em;
   width: 155px;
   font-family: 'Courier New', Courier, monospace;
   font-size: medium;
   background-color: #ee8583;
   color: whitesmoke;
+  border: 3px solid black;
+  font-family: 'Limelight', cursive;
+  margin-left: 28em;
 }

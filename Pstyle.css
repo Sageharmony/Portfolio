@@ -1,5 +1,5 @@
 body {
-  background-color: #D0AA84;
+  background-color: #edc4b8;
   margin: 0;
   padding: none;
   font-family: "Limelight", cursive;
@@ -91,8 +91,8 @@ outline: 3px solid #6B6361;
   align-items: center;
   box-sizing: border-box;
   border: 1em solid  #9D3D3F;
-  background-image: url("imgs/flower.JPG");
-  background-size: contain;
+  background-image: url("https://southernbotanical.com/wp-content/uploads/2020/09/When-is-the-Best-Time-to-Plant-Wildflowers-in-Texas.jpg");
+  background-size: cover;
   outline: 3px solid #6B6361;
   width: 90%;
   margin: 0 auto;
@@ -200,20 +200,34 @@ outline: 3px solid #6B6361;
   z-index: 1;
   display: none;
 }
+
 #modal-text {
-align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20em;
   height: 3em;
-  background-color: #B4E5E7;
-  
+  background-color: #C5E1E8;
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;  
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 #modal-link1 {
   display: flex;
   justify-content: center;
   align-items: space-between;
+  color: whitesmoke;
   text-decoration: none;
   font-size: large;
+  background-color: rgb(187, 187, 89);
+  border: 3px solid black;
+  width: 20%;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 #modal-link2 {
@@ -222,17 +236,91 @@ align-content: center;
   align-items: space-between;
   text-decoration: none;
   font-size: large;
+  background-color: rgb(231, 182, 104);
+  border: 3px solid black;
+  width: 20%;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+
 }
 
 
+
 #close {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
+
+  margin-top: 4em;
   padding: 1em;
   width: 155px;
   font-family: 'Courier New', Courier, monospace;
   font-size: medium;
   background-color: #ee8583;
   color: whitesmoke;
+  border: 3px solid black;
+  font-family: 'Limelight', cursive;
+  margin-left: 28em;
+}
+
+
+@media screen and (max-width: 750px) {
+  #nav{
+    display: block;
+  }
+}
+@media screen and (max-width: 684px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1em solid  #9D3D3F;
+    background-image: url("imgs/flower.JPG");
+    background-size: contain;
+    outline: 1px solid #6B6361;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container > img {
+    width: 50%;
+  }
+  
+  .carousel-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .carousel-images {
+    background: #BDC1AC;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 1px solid #6B6361;
+  }
+  .carousel-images img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: none;
+  }
+  .carousel-button {
+    align-self: center;
+    padding: 2px;
+    text-align: center;
+    font-size: 4em;
+    border: 3px solid #6B6361;
+    color:  #E99857;
+    background-color: #F3DFD1;
+    
+    
+  }
+  .carousel-button:hover {
+    cursor: pointer;
+    background-color: #FFB8B3;
+    color:white;
+  }
+  
+  .carousel-images img:first-of-type {
+    display: block;
+  }
+  
 }
